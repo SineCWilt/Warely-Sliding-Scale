@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warely Subscription Pricing Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-image">
+    <img src="img/bg.jpg" alt="background image" class="bg-image">
+  </div> <!-- Background image div -->
+
+  <div class="container">
+    <h1>Pricing Calculator</h1>
+
+    <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="billingToggle">
+          <span class="toggle-slider"></span>
+        </label>
+        <span id="billingType">Monthly Billing</span>
+      </div>
+          
+
+    <div class="slider-container">
+      <label for="userRange">Number of Users: <span id="userCount">10</span></label>
+      <input type="range" id="userRange" min="1" max="100" value="10">
+    </div>
+
+    <div class="price-display">
+      <p>Total Price: <span id="price">$50</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
